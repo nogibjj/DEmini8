@@ -46,3 +46,15 @@ Input Data: test
 Result: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
 Elapsed Time: 13.113021850585938 microseconds
 Memory Used: 20068 kB
+
+Operation: MD5 Hash
+Input Data: test
+Result: 098f6bcd4621d373cade4e832627b4f6
+Elapsed Time: 16.21246337890625 microseconds
+Memory Used: 32232 kB
+
+Operation: SHA-256 Hash
+Input Data: test
+Result: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+Elapsed Time: 12.874603271484375 microseconds
+Memory Used: 32232 kB

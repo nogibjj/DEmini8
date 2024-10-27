@@ -2,8 +2,8 @@
 import unittest
 from mylib.lib import hash_sha256, hash_md5
 
-class TestHashFunctions(unittest.TestCase):
 
+class TestHashFunctions(unittest.TestCase):
     def test_sha256(self):
         """Test SHA-256 hashing with known input."""
         data = "test"
@@ -15,6 +15,7 @@ class TestHashFunctions(unittest.TestCase):
         data = "test"
         expected = "098f6bcd4621d373cade4e832627b4f6"
         self.assertEqual(hash_md5(data), expected)
+
 
 if __name__ == "__main__":
     unittest.main()
