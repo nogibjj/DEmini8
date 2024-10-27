@@ -1,6 +1,6 @@
-[![Rustfmt](https://github.com/nogibjj/DEmini8/actions/workflows/rustfmt.yml/badge.svg)](https://github.com/nogibjj/DEmini8/actions/workflows/rustfmt.yml)
+[![Rust CI/CD Pipeline](https://github.com/nogibjj/DEmini8/actions/workflows/rustfmt.yml/badge.svg)](https://github.com/nogibjj/DEmini8/actions/workflows/rustfmt.yml)
 
-[![Python CI](https://github.com/nogibjj/DEmini8/actions/workflows/pythonCI.yml/badge.svg)](https://github.com/nogibjj/DEmini8/actions/workflows/pythonCI.yml)
+[![Python CI/CD Pipeline](https://github.com/nogibjj/DEmini8/actions/workflows/pythonCI.yml/badge.svg)](https://github.com/nogibjj/DEmini8/actions/workflows/pythonCI.yml)
 
 # DEmini8: Python and Rust 
 
@@ -12,8 +12,8 @@ DEmini8/
 │
 ├── .github/
 │   └── workflows/
-│       ├── python.yml
-│       └── rust.yml
+│       ├── pythonCI.yml
+│       └── rustfmt.yml
 │
 ├── src/
 │   ├── main.rs
@@ -22,15 +22,14 @@ DEmini8/
 │   └── test_hash.rs
 ├── main.py
 ├── test_main.py
-├── benchmark_and_plot.py
+├── benchmark.py
 ├── Cargo.toml
 └── requirements.txt
    ```
 ## Installation
 
 ### Python Setup
-1. Make sure you have **Python 3.8+** installed.
-2. Install the dependencies:
+1. Install the dependencies:
    ```bash
    pip install -r requirements.txt
    ```
@@ -48,7 +47,7 @@ DEmini8/
 ### Run Python Benchmark
 To run the Python benchmark, execute:
 ```bash
-python3 benchmark_and_plot.py
+python3 benchmark.py
 ```
 
 ### Run Rust Benchmark
@@ -57,6 +56,8 @@ To run the Rust benchmark, build the project in release mode:
 cargo build --release
 ./target/release/my_rust_project
 ```
+<img width="845" alt="image" src="https://github.com/user-attachments/assets/babc0565-a0a6-4ea0-a27b-9881ea78844f">
+
 
 ## GitHub Actions
 
@@ -69,10 +70,13 @@ This project includes two GitHub workflows:
 Below is an example of the benchmark output:
 
 ```
-SHA-256 Time: 0.012345 seconds
-SHA-256 Memory: 2.50 MB
-MD5 Time: 0.010123 seconds
-MD5 Memory: 2.20 MB
+Benchmark Results:
+Metric               Python          Rust           
+--------------------------------------------------
+SHA-256 Time (s)     0.003777        0.044086       
+SHA-256 Memory (MB)  29.72           25552.00       
+MD5 Time (s)         0.014292        0.014210       
+MD5 Memory (MB)      29.72           27344.00    
 ```
 
 ## References
