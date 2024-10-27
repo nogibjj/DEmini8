@@ -1,0 +1,11 @@
+# Core dependencies
+psutil==5.9.5  
+
+# Plotting and visualization
+matplotlib==3.7.2  # For optional plotting in Python benchmarks
+
+# Code formatting
+black==23.7.0  # Ensures code style consistency
+
+# Linting
+flake8==6.1.0  

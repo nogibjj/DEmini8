@@ -1,0 +1,10 @@
+[package]
+name = "my_rust_project"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+md-5 = "0.10"  # Note: Use `md-5` instead of `md5`
+sha2 = "0.10"  # For SHA-256 hashing
+sysinfo = "0.28"  # Add this line
+
