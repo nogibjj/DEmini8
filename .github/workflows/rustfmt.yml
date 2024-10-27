@@ -25,11 +25,18 @@ jobs:
         components: clippy, rustfmt
         override: true
 
-    - name: Format Rust Code
-      run: cargo fmt -- --check
-
-    - name: Lint Code with Clippy
-      run: cargo clippy -- -D warnings
+    - name: update linux
+      run: sudo apt update 
+    - name: update Rust
+      run: make install
+    - name: Check Rust versions
+      run: make rust-version
+    - name: Format
+      run: make format
+    - name: Lint
+      run: make lint
+    - name: Test
+      run: make test
 
     - name: Build Project
       run: cargo build --release

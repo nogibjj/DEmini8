@@ -1,6 +1,6 @@
 [![Rustfmt](https://github.com/nogibjj/DEmini8/actions/workflows/rustfmt.yml/badge.svg)](https://github.com/nogibjj/DEmini8/actions/workflows/rustfmt.yml)
 
-[![pythonCI](https://github.com/nogibjj/DEmini8/actions/workflows/pythonCI.yml/badge.svg)](https://github.com/nogibjj/DEmini8/actions/workflows/pythonCI.yml)
+[![Python CI](https://github.com/nogibjj/DEmini8/actions/workflows/pythonCI.yml/badge.svg)](https://github.com/nogibjj/DEmini8/actions/workflows/pythonCI.yml)
 
 # DEmini8: Python and Rust 
 

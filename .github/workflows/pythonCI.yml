@@ -24,11 +24,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Format Code with Black
-      run: black --check .
+    - name: format
+      run: make python_format
 
-    - name: Lint Code with Flake8
-      run: flake8 .
+    - name: lint
+      run: make python_lint
 
     - name: Run Tests with Unittest
       run: python -m unittest discover -s tests -p 'test_*.py'
