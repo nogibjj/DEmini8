@@ -7,6 +7,7 @@
 This project showcases the performance differences between **Python** and **Rust** for hashing algorithms (SHA-256 and MD5). It includes benchmarking logic, memory usage tracking, and automation using GitHub Actions.
 
 ## Project Structure
+   ```
 DEmini8/
 │
 ├── .github/
@@ -24,7 +25,7 @@ DEmini8/
 ├── benchmark_and_plot.py
 ├── Cargo.toml
 └── requirements.txt
-
+   ```
 ## Installation
 
 ### Python Setup

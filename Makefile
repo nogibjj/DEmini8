@@ -40,7 +40,7 @@ python_format:
 	black *.py 
 
 python_lint:
-	pylint --disable=E,C,W  *.py mylib/*.py
+	ruff --ignore=E,F,W,C *.py mylib/*.py
 
 python_container-lint:
 	docker run --rm -i hadolint/hadolint < Dockerfile
